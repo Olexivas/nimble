@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="header"><h1 className="header__logo">Tracker</h1></header>
+      <input
+        type="text"
+        placeholder="Enter tracker name"
+        className="search"
+      />
+      <div className="item">
+        <h2 className="item__title">No name tracker #1</h2>
+        <p className="item__timer">00:01:23</p>
+        <button className="item__btn item__btn_play">
+          Play/Stop
+        </button>
+        <button className="item__btn item__btn_delete">
+          Delete
+        </button>
+      </div>
     </div>
   );
 }
